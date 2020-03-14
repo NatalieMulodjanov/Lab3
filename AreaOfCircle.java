@@ -1,11 +1,21 @@
-
+/*
+ * This program will calculate the area of a circle only if the radius is 
+not negative or a zero 
+ */
 package lab3;
 import java.util.*;
-
+/**
+ *
+ * @author Natalie Mulodjanov
+ */
 public class AreaOfCircle {
 
     public static void main(String[] args) {
-        
+        System.out.println("+~~~~+~~~~~+~~~~~+~~~~~+~~~~~+"
+                           +"\n|                            |"+
+                            "\n|    Area Of A Circle        |"+
+                            "\n|                            |"+
+                            "\n+~~~~+~~~~~+~~~~~+~~~~~+~~~~~+");
         System.out.println("Please enter the radius of the circle");
         Scanner input = new Scanner(System.in);
         double radius = input.nextDouble();
@@ -18,7 +28,9 @@ public class AreaOfCircle {
         else {
             System.out.printf("the area of the circle is: %.2f units\n", area );
         }
-    } 
+        System.out.println("\n\nThank you for using the application "+
+                            "\nGoodBye");
+    }   
 }
     
       

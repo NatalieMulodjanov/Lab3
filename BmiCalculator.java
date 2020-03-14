@@ -1,18 +1,28 @@
+/*
+ * This program will calculate the BMI of the user given the height and weight. 
+ */
 package lab3;
 
 import java.util.Scanner;
-
+/**
+ *
+ * @author Natalie Mulodjanov
+ */
 public class BmiCalculator {
     public static void main(String[] args) {
         
         double weight, height, weightKG, heightM, BMI;
         final double TO_KG = 0.453592;
         final double TO_M = 0.3048;
-        
+        System.out.println("+~~~~+~~~~~+~~~~~+~~~~~+~~~~~+"
+                           +"\n|                            |"+
+                            "\n|        BMI Calculator      |"+
+                            "\n|                            |"+
+                            "\n+~~~~+~~~~~+~~~~~+~~~~~+~~~~~+");
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter your height in feet and weight in pounds");
         height = input.nextDouble();
-       weight = input.nextDouble();
+        weight = input.nextDouble();
        
         weightKG = weight * TO_KG;
         heightM = height * TO_M;
@@ -33,7 +43,7 @@ public class BmiCalculator {
         } else if (BMI <34.9){
             System.out.println("Your BMI is classified as 'obese");
         }
-         
-            
+        System.out.println("\n\nThank you for using the application "+
+                            "\nGoodBye");
     }
 }

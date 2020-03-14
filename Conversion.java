@@ -1,6 +1,12 @@
-
+/*
+ * This program will give as options 5 different conversions. The user can choose 
+one option and the program will run the selection. 
+ */
 package lab3;
-
+/**
+ *
+ * @author Natalie Mulodjanov
+ */
 import java.util.Scanner;
 
 
@@ -27,6 +33,7 @@ public class Conversion {
         
         switch (selection){
             case 1:
+                System.out.println("***Meters To Feet Conversion***");
                 System.out.println("Please enter the amount of meters you would like to convert");
                 double meters = input.nextDouble();
                 result = meters * TO_FT; 
@@ -34,13 +41,15 @@ public class Conversion {
                 break;
                 
             case 2:
+                System.out.println("***CAD To USD Conversion***");
                 System.out.println("Please enter the amount of CAD you would like to convert");
                 double CAD = input.nextDouble();
                 result = CAD * TO_USD;
-                System.out.println(CAD + " Canadian Dollars " + result + " US Dollars");     
+                System.out.println("As of today," + CAD + " Canadian Dollars equal to " + result + " US Dollars");     
                 break;
             
             case 3:
+                System.out.println("***Celsius Degrees to Fahrenhite Degrees Conversion***");
                 System.out.println("Please enter the amount of Celsius degrees you would like to convert ");
                 double celsius = input.nextDouble();
                 result = (celsius * 9/5) + 32;
@@ -48,6 +57,7 @@ public class Conversion {
                 break;
                 
             case 4:
+                System.out.println("***Kilometers to Miles Conversion***");
                 System.out.println("Please enter the amount of Kilometers you would like to convert");
                 double kilometers = input.nextDouble();
                 result = kilometers * TO_ML;
@@ -55,6 +65,7 @@ public class Conversion {
                 break;
             
             case 5: 
+                System.out.println("***Kilograms to Pounds Conversion***");
                 System.out.println("Please enter the amount of Kilograms you would like to convert ");
                 double kilograms = input.nextDouble();
                 result = kilograms * TO_PD;
